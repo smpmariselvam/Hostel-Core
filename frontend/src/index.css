@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased;
+  }
+
+  ::selection {
+    @apply bg-blue-600 text-white;
+  }
+}
+
+@layer components {
+  .page-card {
+    @apply rounded-3xl bg-white border border-slate-200 shadow-sm;
+  }
+
+  .soft-input {
+    @apply w-full rounded-2xl border border-slate-200 bg-slate-50 px-4 py-3 outline-none transition focus:border-blue-500 focus:bg-white focus:ring-4 focus:ring-blue-500/10;
+  }
+}
